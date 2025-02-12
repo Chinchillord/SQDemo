@@ -21,23 +21,37 @@ final class SQDemoUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    let app = XCUIApplication()
+    
+    lazy var counter = app.staticTexts.firstMatch
+    lazy var addButton = app.buttons["Add"]
+    lazy var subtractButton = app.buttons["Subtract"]
+    lazy var resetButton = app.buttons["Reset"]
 
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+    func testIncrement() throws {
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        _ = addButton.waitForExistence(timeout: TimeInterval(10))
+        addButton.tap()
+        addButton.tap()
+        XCTAssertEqual(counter.label, "2")
     }
-
-    @MainActor
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    func testDecrement() throws {
+        app.launch()
+        _ = addButton.waitForExistence(timeout: TimeInterval(10))
+        addButton.tap()
+        addButton.tap()
+        subtractButton.tap()
+        XCTAssertEqual(counter.label, "1")
+    }
+    
+    func testReset() {
+        app.launch()
+        _ = addButton.waitForExistence(timeout: TimeInterval(10))
+        addButton.tap()
+        addButton.tap()
+        resetButton.tap()
+        XCTAssertEqual(counter.label, "0")
     }
 }
