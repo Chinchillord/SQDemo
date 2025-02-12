@@ -24,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SQDemo.xctestplan; sourceTree = "<group>"; };
 		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +76,7 @@
 		2F3320372D52BFDC00A448AA = {
 			isa = PBXGroup;
 			children = (
+				1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */,
 				2F3320422D52BFDC00A448AA /* SQDemo */,
 				2F3320532D52BFDE00A448AA /* SQDemoTests */,
 				2F33205D2D52BFDE00A448AA /* SQDemoUITests */,
