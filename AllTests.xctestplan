@@ -4,7 +4,11 @@
       "id" : "C196AED6-A814-4FD7-96C3-5DBB23904CAD",
       "name" : "Configuration 1",
       "options" : {
-
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:SQDemo.xcodeproj",
+          "identifier" : "2F33203F2D52BFDC00A448AA",
+          "name" : "OurSQDemo"
+        }
       }
     }
   ],

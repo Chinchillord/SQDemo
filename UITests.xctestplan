@@ -9,7 +9,11 @@
     }
   ],
   "defaultOptions" : {
-
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SQDemo.xcodeproj",
+      "identifier" : "2F33203F2D52BFDC00A448AA",
+      "name" : "OurSQDemo"
+    }
   },
   "testTargets" : [
     {
