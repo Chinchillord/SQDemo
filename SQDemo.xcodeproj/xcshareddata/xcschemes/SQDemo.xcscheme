@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1620"
-   version = "2.2">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
       <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <AutocreatedTestPlanReference>
-            </AutocreatedTestPlanReference>
-         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -27,7 +18,35 @@
                BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
                BuildableName = "OurSQDemo.app"
                BlueprintName = "OurSQDemo"
-               ReferencedContainer = "container:OurSQDemo.xcodeproj">
+               ReferencedContainer = "container:SQDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F33204F2D52BFDE00A448AA"
+               BuildableName = "OurSQDemoTests.xctest"
+               BlueprintName = "OurSQDemoTests"
+               ReferencedContainer = "container:SQDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F3320592D52BFDE00A448AA"
+               BuildableName = "OurSQDemoUITests.xctest"
+               BlueprintName = "OurSQDemoUITests"
+               ReferencedContainer = "container:SQDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,34 +58,10 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:SQDemo.xctestplan"
+            reference = "container:TestPlan.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F33204F2D52BFDE00A448AA"
-               BuildableName = "OurSQDemoTests.xctest"
-               BlueprintName = "OurSQDemoTests"
-               ReferencedContainer = "container:OurSQDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F3320592D52BFDE00A448AA"
-               BuildableName = "OurSQDemoUITests.xctest"
-               BlueprintName = "OurSQDemoUITests"
-               ReferencedContainer = "container:OurSQDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -85,7 +80,7 @@
             BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
             BuildableName = "OurSQDemo.app"
             BlueprintName = "OurSQDemo"
-            ReferencedContainer = "container:OurSQDemo.xcodeproj">
+            ReferencedContainer = "container:SQDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -95,16 +90,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
             BuildableName = "OurSQDemo.app"
             BlueprintName = "OurSQDemo"
-            ReferencedContainer = "container:OurSQDemo.xcodeproj">
+            ReferencedContainer = "container:SQDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1CC20DE32D5D1E4E00B931DE /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE22D5D1E4E00B931DE /* TestPlan.xctestplan */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2F3320512D52BFDE00A448AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SQDemo.xctestplan; sourceTree = "<group>"; };
+		1CC20DE22D5D1E4E00B931DE /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +81,7 @@
 		2F3320372D52BFDC00A448AA = {
 			isa = PBXGroup;
 			children = (
+				1CC20DE22D5D1E4E00B931DE /* TestPlan.xctestplan */,
 				1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */,
 				2F3320422D52BFDC00A448AA /* SQDemo */,
 				2F3320532D52BFDE00A448AA /* SQDemoTests */,
@@ -188,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "OurSQDemo" */;
+			buildConfigurationList = 2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "SQDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -214,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DE32D5D1E4E00B931DE /* TestPlan.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "OurSQDemo" */ = {
+		2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "SQDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3320622D52BFDE00A448AA /* Debug */,

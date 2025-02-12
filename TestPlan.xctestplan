@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "9C03B620-2C6C-4CD3-A370-4BD5CDC3E30E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SQDemo.xcodeproj",
+        "identifier" : "2F33204F2D52BFDE00A448AA",
+        "name" : "OurSQDemoTests"
+      }
+    }
+  ],
+  "version" : 1
+}

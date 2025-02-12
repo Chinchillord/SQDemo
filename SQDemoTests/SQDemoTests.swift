@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SQDemo
+@testable import OurSQDemo
 
 // Mock Countable for Testing
 final class MockCountable: Countable {
