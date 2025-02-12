@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1CC20DE32D5D1E4E00B931DE /* UnitTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE22D5D1E4E00B931DE /* UnitTests.xctestplan */; };
+		1CC20DE82D5D2C8200B931DE /* AllTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */; };
+		1CC20DE92D5D2C8200B931DE /* UITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */; };
+		1CC20DEA2D5D2C8200B931DE /* AllTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */; };
+		1CC20DEB2D5D2C8200B931DE /* UITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */; };
+		1CC20DEC2D5D2C8200B931DE /* AllTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */; };
+		1CC20DED2D5D2C8200B931DE /* UITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +36,8 @@
 /* Begin PBXFileReference section */
 		1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SQDemo.xctestplan; sourceTree = "<group>"; };
 		1CC20DE22D5D1E4E00B931DE /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
-		1CC20DE42D5D26C600B931DE /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = UITests.xctestplan; path = ../UITests.xctestplan; sourceTree = "<group>"; };
-		1CC20DE52D5D26EB00B931DE /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AllTests.xctestplan; path = ../AllTests.xctestplan; sourceTree = "<group>"; };
+		1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +89,8 @@
 		2F3320372D52BFDC00A448AA = {
 			isa = PBXGroup;
 			children = (
-				1CC20DE42D5D26C600B931DE /* UITests.xctestplan */,
-				1CC20DE52D5D26EB00B931DE /* AllTests.xctestplan */,
+				1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */,
+				1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */,
 				1CC20DE22D5D1E4E00B931DE /* UnitTests.xctestplan */,
 				1C3FE4F92D5D1BA60076BE37 /* SQDemo.xctestplan */,
 				2F3320422D52BFDC00A448AA /* SQDemo */,
@@ -224,6 +230,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DE82D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
+				1CC20DE92D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 				1CC20DE32D5D1E4E00B931DE /* UnitTests.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DEC2D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
+				1CC20DED2D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DEA2D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
+				1CC20DEB2D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

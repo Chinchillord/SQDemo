@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "C196AED6-A814-4FD7-96C3-5DBB23904CAD",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SQDemo.xcodeproj",
+        "identifier" : "2F3320592D52BFDE00A448AA",
+        "name" : "OurSQDemoUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:SQDemo.xcodeproj",
+        "identifier" : "2F33204F2D52BFDE00A448AA",
+        "name" : "OurSQDemoTests"
+      }
+    }
+  ],
+  "version" : 1
+}

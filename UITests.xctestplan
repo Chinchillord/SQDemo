@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "85643A9C-C3D7-437D-81AB-8C4237CEB9CF",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SQDemo.xcodeproj",
+        "identifier" : "2F3320592D52BFDE00A448AA",
+        "name" : "OurSQDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
