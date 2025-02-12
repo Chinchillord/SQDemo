@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3320402D52BFDC00A448AA /* SQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F3320502D52BFDE00A448AA /* SQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F33205A2D52BFDE00A448AA /* SQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		2F3320412D52BFDC00A448AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F3320402D52BFDC00A448AA /* SQDemo.app */,
-				2F3320502D52BFDE00A448AA /* SQDemoTests.xctest */,
-				2F33205A2D52BFDE00A448AA /* SQDemoUITests.xctest */,
+				2F3320402D52BFDC00A448AA /* OurSQDemo.app */,
+				2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */,
+				2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F33203F2D52BFDC00A448AA /* SQDemo */ = {
+		2F33203F2D52BFDC00A448AA /* OurSQDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemo" */;
+			buildConfigurationList = 2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemo" */;
 			buildPhases = (
 				2F33203C2D52BFDC00A448AA /* Sources */,
 				2F33203D2D52BFDC00A448AA /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				2F3320422D52BFDC00A448AA /* SQDemo */,
 			);
-			name = SQDemo;
+			name = OurSQDemo;
 			packageProductDependencies = (
 			);
 			productName = SQDemo;
-			productReference = 2F3320402D52BFDC00A448AA /* SQDemo.app */;
+			productReference = 2F3320402D52BFDC00A448AA /* OurSQDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F33204F2D52BFDE00A448AA /* SQDemoTests */ = {
+		2F33204F2D52BFDE00A448AA /* OurSQDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3320672D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoTests" */;
+			buildConfigurationList = 2F3320672D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemoTests" */;
 			buildPhases = (
 				2F33204C2D52BFDE00A448AA /* Sources */,
 				2F33204D2D52BFDE00A448AA /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				2F3320532D52BFDE00A448AA /* SQDemoTests */,
 			);
-			name = SQDemoTests;
+			name = OurSQDemoTests;
 			packageProductDependencies = (
 			);
 			productName = SQDemoTests;
-			productReference = 2F3320502D52BFDE00A448AA /* SQDemoTests.xctest */;
+			productReference = 2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F3320592D52BFDE00A448AA /* SQDemoUITests */ = {
+		2F3320592D52BFDE00A448AA /* OurSQDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F33206A2D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoUITests" */;
+			buildConfigurationList = 2F33206A2D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemoUITests" */;
 			buildPhases = (
 				2F3320562D52BFDE00A448AA /* Sources */,
 				2F3320572D52BFDE00A448AA /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				2F33205D2D52BFDE00A448AA /* SQDemoUITests */,
 			);
-			name = SQDemoUITests;
+			name = OurSQDemoUITests;
 			packageProductDependencies = (
 			);
 			productName = SQDemoUITests;
-			productReference = 2F33205A2D52BFDE00A448AA /* SQDemoUITests.xctest */;
+			productReference = 2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "SQDemo" */;
+			buildConfigurationList = 2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "OurSQDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F33203F2D52BFDC00A448AA /* SQDemo */,
-				2F33204F2D52BFDE00A448AA /* SQDemoTests */,
-				2F3320592D52BFDE00A448AA /* SQDemoUITests */,
+				2F33203F2D52BFDC00A448AA /* OurSQDemo */,
+				2F33204F2D52BFDE00A448AA /* OurSQDemoTests */,
+				2F3320592D52BFDE00A448AA /* OurSQDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		2F3320522D52BFDE00A448AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F33203F2D52BFDC00A448AA /* SQDemo */;
+			target = 2F33203F2D52BFDC00A448AA /* OurSQDemo */;
 			targetProxy = 2F3320512D52BFDE00A448AA /* PBXContainerItemProxy */;
 		};
 		2F33205C2D52BFDE00A448AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F33203F2D52BFDC00A448AA /* SQDemo */;
+			target = 2F33203F2D52BFDC00A448AA /* OurSQDemo */;
 			targetProxy = 2F33205B2D52BFDE00A448AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,7 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SQDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -425,7 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SQDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -452,7 +452,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -461,7 +461,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SQDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OurSQDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OurSQDemo";
 			};
 			name = Debug;
 		};
@@ -471,7 +471,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -480,7 +480,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SQDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OurSQDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OurSQDemo";
 			};
 			name = Release;
 		};
@@ -489,7 +489,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.underdogfantasy.SQDemoUITests;
@@ -506,7 +506,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XR8B6CD39Y;
+				DEVELOPMENT_TEAM = 6X43R5V9QG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.underdogfantasy.SQDemoUITests;
@@ -521,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "SQDemo" */ = {
+		2F33203B2D52BFDC00A448AA /* Build configuration list for PBXProject "OurSQDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3320622D52BFDE00A448AA /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemo" */ = {
+		2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3320652D52BFDE00A448AA /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F3320672D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoTests" */ = {
+		2F3320672D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3320682D52BFDE00A448AA /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F33206A2D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoUITests" */ = {
+		2F33206A2D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F33206B2D52BFDE00A448AA /* Debug */,
