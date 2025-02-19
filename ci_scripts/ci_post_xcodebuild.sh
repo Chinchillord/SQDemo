@@ -14,5 +14,5 @@ sonar-scanner \
   -Dsonar.organization=chinchillord \
   -Dsonar.projectKey=Chinchillord_SQDemo \
   -Dsonar.sources=. \
-  -Dsonar.host.url=https://sonarcloud.io
+  -Dsonar.host.url=https://sonarcloud.io \
   -Dsonar.coverageReportPath=AAAAA.xml
