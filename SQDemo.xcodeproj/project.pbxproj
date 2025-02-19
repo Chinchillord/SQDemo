@@ -14,6 +14,9 @@
 		1CC20DEB2D5D2C8200B931DE /* UITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */; };
 		1CC20DEC2D5D2C8200B931DE /* AllTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */; };
 		1CC20DED2D5D2C8200B931DE /* UITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */; };
+		1CC20DF12D66571800B931DE /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DF02D66570200B931DE /* sonar-project.properties */; };
+		1CC20DF22D66571800B931DE /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DF02D66570200B931DE /* sonar-project.properties */; };
+		1CC20DF32D66571800B931DE /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 1CC20DF02D66570200B931DE /* sonar-project.properties */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		1CC20DE22D5D1E4E00B931DE /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
 		1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
+		1CC20DEF2D6656EF00B931DE /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		1CC20DF02D66570200B931DE /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		1CC20DF42D665A1900B931DE /* xccov-to-sonarqube-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xccov-to-sonarqube-generic.sh"; sourceTree = "<group>"; };
 		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,9 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CC20DEE2D6656AC00B931DE /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1CC20DF42D665A1900B931DE /* xccov-to-sonarqube-generic.sh */,
+				1CC20DEF2D6656EF00B931DE /* ci_post_xcodebuild.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		2F3320372D52BFDC00A448AA = {
 			isa = PBXGroup;
 			children = (
+				1CC20DF02D66570200B931DE /* sonar-project.properties */,
+				1CC20DEE2D6656AC00B931DE /* ci_scripts */,
 				1CC20DE62D5D2C8200B931DE /* AllTests.xctestplan */,
 				1CC20DE72D5D2C8200B931DE /* UITests.xctestplan */,
 				1CC20DE22D5D1E4E00B931DE /* UnitTests.xctestplan */,
@@ -230,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DF12D66571800B931DE /* sonar-project.properties in Resources */,
 				1CC20DE82D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
 				1CC20DE92D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 				1CC20DE32D5D1E4E00B931DE /* UnitTests.xctestplan in Resources */,
@@ -240,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DF32D66571800B931DE /* sonar-project.properties in Resources */,
 				1CC20DEC2D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
 				1CC20DED2D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 			);
@@ -249,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC20DF22D66571800B931DE /* sonar-project.properties in Resources */,
 				1CC20DEA2D5D2C8200B931DE /* AllTests.xctestplan in Resources */,
 				1CC20DEB2D5D2C8200B931DE /* UITests.xctestplan in Resources */,
 			);
