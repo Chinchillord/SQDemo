@@ -7,12 +7,15 @@
 #
   
   # extract coverage data from project using xcode native tool
-  brew install sonar-scanner
-  bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
-  cat AAAAA.xml
-sonar-scanner \
-  -Dsonar.organization=chinchillord \
-  -Dsonar.projectKey=Chinchillord_SQDemo \
-  -Dsonar.sources=. \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.coverageReportPaths=AAAAA.xml
+if [ "$CI_XCODEBUILD_ACTION" = "test-without-building"]
+then
+    brew install sonar-scanner
+    bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
+    cat AAAAA.xml
+    sonar-scanner \
+    -Dsonar.organization=chinchillord \
+    -Dsonar.projectKey=Chinchillord_SQDemo \
+    -Dsonar.sources=. \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.coverageReportPaths=AAAAA.xml
+fi
