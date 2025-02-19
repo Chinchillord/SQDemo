@@ -8,7 +8,7 @@
   
   # extract coverage data from project using xcode native tool
   
-  xccov-to-sonarqube-generic.sh $CI_RESULT_BUNDLE_PATH/.*XCResult > AAAAA.xml
+  xccov-to-sonarqube-generic.sh /Volumes/workspace/.*XCResult > AAAAA.xml
   cat AAAAA.xml
   # run sonar scanner and upload coverage data with the current app version
   #TODO: Set up my api key? project name? What do we need here
