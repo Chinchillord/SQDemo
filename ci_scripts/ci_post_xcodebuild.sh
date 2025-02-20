@@ -7,7 +7,7 @@
 #
   
   # extract coverage data from project using xcode native tool
-if [ "$CI_XCODEBUILD_ACTION" = "test-without-building"]
+if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
