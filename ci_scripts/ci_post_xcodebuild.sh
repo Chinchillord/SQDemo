@@ -11,6 +11,9 @@ echo "project dir"
 pwd
 echo pwd
 pwd | echo
+ls /Volumes/workspace/repository
+echo ls /Volumes/workspace/repository
+ls /Volumes/workspace/repository | echo
 if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     brew install sonar-scanner
