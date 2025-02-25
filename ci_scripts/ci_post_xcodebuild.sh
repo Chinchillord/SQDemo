@@ -26,5 +26,5 @@ then
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
     -Dsonar.scm.provider=git \
-    -Dsonar.projectBaseDir=/Volumes/workspace
+    -Dsonar.projectBaseDir="$CI_PROJECT_FILE_PATH"
 fi
