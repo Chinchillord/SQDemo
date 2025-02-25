@@ -17,5 +17,6 @@ then
     -Dsonar.projectKey=Chinchillord_SQDemo \
     -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.coverageReportPaths=AAAAA.xml
+    -Dsonar.coverageReportPaths=AAAAA.xml \
+    -Dsonar.scm.provider=git
 fi
