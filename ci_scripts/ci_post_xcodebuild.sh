@@ -7,6 +7,10 @@
 #
   
   # extract coverage data from project using xcode native tool
+echo "project dir"
+ls
+echo ls
+ls | echo
 if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     brew install sonar-scanner
@@ -18,5 +22,6 @@ then
     -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
-    -Dsonar.scm.provider=git
+    -Dsonar.scm.provider=git \
+    -Dsonar.projectBaseDir = /Volumes/workspace/SQDemo
 fi
