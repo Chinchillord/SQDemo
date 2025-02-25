@@ -11,9 +11,9 @@ echo "project dir"
 pwd
 echo pwd
 pwd | echo
-ls /Volumes/workspace/repository
-echo ls /Volumes/workspace/repository
-ls /Volumes/workspace/repository
+ls /Volumes/workspace
+echo ls /Volumes/workspace
+ls /Volumes/workspace
 if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     brew install sonar-scanner
@@ -26,5 +26,5 @@ then
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
     -Dsonar.scm.provider=git \
-    -Dsonar.projectBaseDir=/Volumes/workspace/repository
+    -Dsonar.projectBaseDir=/Volumes/workspace
 fi
