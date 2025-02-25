@@ -23,5 +23,5 @@ then
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
     -Dsonar.scm.provider=git \
-    -Dsonar.projectBaseDir=/Volumes/workspace/repository/
+    -Dsonar.projectBaseDir=/Volumes/workspace/repository/SQDemo/
 fi
