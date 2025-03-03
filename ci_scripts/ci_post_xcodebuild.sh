@@ -19,6 +19,7 @@ then
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     cat AAAAA.xml
+    cd $(git rev-parse --show-toplevel)
     sonar-scanner \
     -Dsonar.organization=chinchillord \
     -Dsonar.projectKey=Chinchillord_SQDemo \
@@ -26,5 +27,4 @@ then
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
     -Dsonar.scm.provider=git \
-    -Dsonar.projectBaseDir=/Volumes/workspace/repository/
 fi
