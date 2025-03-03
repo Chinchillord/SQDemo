@@ -7,13 +7,9 @@
 #
   
   # extract coverage data from project using xcode native tool
-echo "project dir"
-pwd
-echo pwd
-pwd | echo
-ls /Volumes/workspace/repository/
-echo ls /Volumes/workspace/repository/
-ls /Volumes/workspace/repository/
+echo $(git rev-parse --show-toplevel)
+ls $(git rev-parse --show-toplevel)
+ls $(git rev-parse --show-toplevel) | echo
 if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     brew install sonar-scanner
