@@ -20,6 +20,11 @@ private func notInCoverage() {
     print("not")
     print("in")
     print("coverage")
+    print("I")
+    print("am")
+    print("not")
+    print("in")
+    print("coverage")
 }
 
 @Observable
