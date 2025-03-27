@@ -14,6 +14,30 @@ protocol Countable {
     func reset()
 }
 
+private func notInCoverage() {
+    print("I")
+    print("am")
+    print("not")
+    print("in")
+    print("coverage")
+    print("I")
+    print("am")
+    print("not")
+    print("in")
+    print("coverage")
+    print("I")
+    print("am")
+    print("not")
+    print("in")
+    print("coverage")
+    print("I")
+    print("am")
+    print("not")
+    print("in")
+    print("coverage")
+    print("a")
+}
+
 @Observable
 final class CounterViewModel: Countable, ObservableObject {
     var count = 0
