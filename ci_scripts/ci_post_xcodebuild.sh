@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #  ci_post_xcodebuild.sh
 #  SQDemo
