@@ -18,7 +18,5 @@ then
     -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.coverageReportPaths=AAAAA.xml \
-    #-Dsonar.scm.provider=git
-    # Trying to scm disabled which removes git blame/new code detection but just seeing if this removes the issue
     -Dsonar.scm.disabled=true
 fi
