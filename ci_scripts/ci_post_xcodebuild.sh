@@ -13,10 +13,12 @@ then
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     cat AAAAA.xml
     sonar-scanner \
-    -Dsonar.organization=chinchillord \
-    -Dsonar.projectKey=Chinchillord_SQDemo \
-    -Dsonar.sources=. \
-    -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.coverageReportPaths=AAAAA.xml \
-    -Dsonar.scm.disabled=true
+      -Dsonar.projectBaseDir=/Volumes/workspace/repository \
+      -Dsonar.organization=chinchillord \
+      -Dsonar.projectKey=Chinchillord_SQDemo \
+      -Dsonar.sources=SQDemo \
+      -Dsonar.tests=SQDemoTests,SQDemoUITests \
+      -Dsonar.host.url=https://sonarcloud.io \
+      -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
+      -Dsonar.scm.disabled=true
 fi
