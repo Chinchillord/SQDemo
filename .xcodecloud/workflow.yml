@@ -8,4 +8,4 @@ checkout:
 
 actions:
   - name: Build and Test
-    action: build
+    action: test
