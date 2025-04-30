@@ -12,6 +12,8 @@ then
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     cat AAAAA.xml
+    echo "==> Tree dump of repository:"
+    find /Volumes/workspace/repository -type d | sort
     echo "==> Listing contents under expected test paths:"
     find /Volumes/workspace/repository/SQDemoTests -type f
     find /Volumes/workspace/repository/SQDemoUITests -type f

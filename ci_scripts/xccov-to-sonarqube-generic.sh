@@ -11,7 +11,7 @@ set -euo pipefail
 
 function convert_xccov_to_xml {
   sed -n                                                                                       \
-      -e '/:$/s/&/\&amp;/g;s/^\(.*\):$/  <file path="\1">/p'                                   \
+      -e '/:$/s/&/\&amp;/g;s#^\(.*\):$#  <file path="/Volumes/workspace/repository/\1">#p'     \
       -e 's/^ *\([0-9][0-9]*\): 0.*$/    <lineToCover lineNumber="\1" covered="false"\/>/p'    \
       -e 's/^ *\([0-9][0-9]*\): [1-9].*$/    <lineToCover lineNumber="\1" covered="true"\/>/p' \
       -e 's/^$/  <\/file>/p'
