@@ -1,11 +1,3 @@
-#
-//  xccov-to-sonarqube-generic.sh
-//  SQDemo
-//
-//  Created by Michael Rack on 2/19/25.
-//
-
-
 #!/usr/bin/env bash
 set -euo pipefail
 
