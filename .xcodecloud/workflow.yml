@@ -1,0 +1,11 @@
+name: CI Workflow
+
+environment:
+  xcode: latest
+
+checkout:
+  strategy: clone
+
+actions:
+  - name: Build and Test
+    action: build
