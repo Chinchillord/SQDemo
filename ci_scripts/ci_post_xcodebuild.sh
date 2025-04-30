@@ -17,7 +17,7 @@ then
       -Dsonar.organization=chinchillord \
       -Dsonar.projectKey=Chinchillord_SQDemo \
       -Dsonar.sources=SQDemo \
-      -Dsonar.tests=SQDemoTests,SQDemoUITests \
+      -Dsonar.tests=SQDemo/SQDemoTests,SQDemo/SQDemoUITests \
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
       -Dsonar.scm.disabled=true
