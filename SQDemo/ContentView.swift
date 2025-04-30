@@ -36,6 +36,7 @@ private func notInCoverage() {
     print("in")
     print("coverage")
     print("a")
+    print("b")
 }
 
 @Observable
