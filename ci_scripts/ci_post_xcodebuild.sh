@@ -5,7 +5,19 @@
 #
 #  Created by Michael Rack on 2/19/25.
 #
-   
+  
+if [ "$CI_XCODEBUILD_ACTION" = "build-for-testing" ]
+then
+    rm -rf $CI_RESULT_BUNDLE_PATH
+        
+    xcodebuild \
+      -project "$CI_XCODE_PROJECT" \
+      -scheme "SQDemo" \
+      -destination 'platform=iOS Simulator,name=iPhone 16' \
+      -enableCodeCoverage YES \
+      -resultBundlePath $CI_RESULT_BUNDLE_PATH \
+      test-without-building
+      
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     cat AAAAA.xml
@@ -23,3 +35,4 @@
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=AAAAA.xml \
       -Dsonar.scm.disabled=true
+fi
