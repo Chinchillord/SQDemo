@@ -11,8 +11,10 @@ if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
     rm -rf $CI_RESULT_BUNDLE_PATH
     
+    cd /Volumes/workspace/repository
+    
     xcodebuild \
-      -workspace "$CI_WORKSPACE/$CI_XCODE_PROJECT" \
+      -project "$CI_XCODE_PROJECT" \
       -scheme "SQDemo" \
       -destination 'platform=iOS Simulator,name=iPhone 16' \
       -enableCodeCoverage YES \
