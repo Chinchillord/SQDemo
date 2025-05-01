@@ -4,8 +4,10 @@ environment:
   xcode: latest
 
 checkout:
-  strategy: clone
+  strategy: clone  # Ensures full git repo including .git folder is cloned
 
 actions:
   - name: Build and Test
     action: test
+    scheme: SQDemo            # <-- Make sure this matches your shared testable scheme name
+    workspace: SQDemo.xcworkspace  # <-- or project: SQDemo.xcodeproj if you're not using a workspace
