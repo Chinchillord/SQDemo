@@ -9,6 +9,8 @@
   # extract coverage data from project using xcode native tool
 if [ "$CI_XCODEBUILD_ACTION" = "test-without-building" ]
 then
+    rm -rf $CI_RESULT_BUNDLE_PATH
+    
     xcodebuild \
       -workspace "$CI_WORKSPACE/$CI_XCODE_PROJECT" \
       -scheme "SQDemo" \
