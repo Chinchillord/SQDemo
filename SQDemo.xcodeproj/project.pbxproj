@@ -44,7 +44,7 @@
 		1CC20DEF2D6656EF00B931DE /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 		1CC20DF02D66570200B931DE /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		1CC20DF42D665A1900B931DE /* xccov-to-sonarqube-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xccov-to-sonarqube-generic.sh"; sourceTree = "<group>"; };
-		2F3320402D52BFDC00A448AA /* SQDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,7 +120,7 @@
 		2F3320412D52BFDC00A448AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F3320402D52BFDC00A448AA /* SQDemoTest.app */,
+				2F3320402D52BFDC00A448AA /* OurSQDemo.app */,
 				2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */,
 				2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */,
 			);
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F33203F2D52BFDC00A448AA /* SQDemoTest */ = {
+		2F33203F2D52BFDC00A448AA /* OurSQDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoTest" */;
+			buildConfigurationList = 2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemo" */;
 			buildPhases = (
 				2F33203C2D52BFDC00A448AA /* Sources */,
 				2F33203D2D52BFDC00A448AA /* Frameworks */,
@@ -145,11 +145,11 @@
 			fileSystemSynchronizedGroups = (
 				2F3320422D52BFDC00A448AA /* SQDemo */,
 			);
-			name = SQDemoTest;
+			name = OurSQDemo;
 			packageProductDependencies = (
 			);
 			productName = SQDemo;
-			productReference = 2F3320402D52BFDC00A448AA /* SQDemoTest.app */;
+			productReference = 2F3320402D52BFDC00A448AA /* OurSQDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2F33204F2D52BFDE00A448AA /* OurSQDemoTests */ = {
@@ -235,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F33203F2D52BFDC00A448AA /* SQDemoTest */,
+				2F33203F2D52BFDC00A448AA /* OurSQDemo */,
 				2F33204F2D52BFDE00A448AA /* OurSQDemoTests */,
 				2F3320592D52BFDE00A448AA /* OurSQDemoUITests */,
 			);
@@ -303,12 +303,12 @@
 /* Begin PBXTargetDependency section */
 		2F3320522D52BFDE00A448AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F33203F2D52BFDC00A448AA /* SQDemoTest */;
+			target = 2F33203F2D52BFDC00A448AA /* OurSQDemo */;
 			targetProxy = 2F3320512D52BFDE00A448AA /* PBXContainerItemProxy */;
 		};
 		2F33205C2D52BFDE00A448AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F33203F2D52BFDC00A448AA /* SQDemoTest */;
+			target = 2F33203F2D52BFDC00A448AA /* OurSQDemo */;
 			targetProxy = 2F33205B2D52BFDE00A448AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -577,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "SQDemoTest" */ = {
+		2F3320642D52BFDE00A448AA /* Build configuration list for PBXNativeTarget "OurSQDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F3320652D52BFDE00A448AA /* Debug */,

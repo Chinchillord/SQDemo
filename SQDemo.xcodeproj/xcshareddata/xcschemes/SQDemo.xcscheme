@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
-               BuildableName = "SQDemoTest.app"
-               BlueprintName = "SQDemoTest"
+               BuildableName = "OurSQDemo.app"
+               BlueprintName = "OurSQDemo"
                ReferencedContainer = "container:SQDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -84,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
-            BuildableName = "SQDemoTest.app"
-            BlueprintName = "SQDemoTest"
+            BuildableName = "OurSQDemo.app"
+            BlueprintName = "OurSQDemo"
             ReferencedContainer = "container:SQDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -100,8 +100,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F33203F2D52BFDC00A448AA"
-            BuildableName = "SQDemoTest.app"
-            BlueprintName = "SQDemoTest"
+            BuildableName = "OurSQDemo.app"
+            BlueprintName = "OurSQDemo"
             ReferencedContainer = "container:SQDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
