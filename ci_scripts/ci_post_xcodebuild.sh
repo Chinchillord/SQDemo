@@ -22,7 +22,7 @@ then
     sonar-scanner \
       -Dsonar.organization=chinchillord \
       -Dsonar.projectKey=Chinchillord_SQDemo \
-      -Dsonar.sources=SQDemo \
+      -Dsonar.sources=. \
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=AAAAA.xml \
       -Dsonar.scm.disabled=true
