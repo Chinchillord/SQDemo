@@ -19,7 +19,7 @@ then
       -destination 'platform=iOS Simulator,name=iPhone 16' \
       -enableCodeCoverage YES \
       -resultBundlePath $CI_RESULT_BUNDLE_PATH \
-      test-without-building
+      test
       
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
