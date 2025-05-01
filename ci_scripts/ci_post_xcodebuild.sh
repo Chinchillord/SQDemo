@@ -20,6 +20,7 @@ then
     find /Volumes/workspace/repository/SQDemoTests -type f
     find /Volumes/workspace/repository/SQDemoUITests -type f
     sonar-scanner \
+      -Dsonar.projectBaseDir=/Volumes/workspace/repository \
       -Dsonar.organization=chinchillord \
       -Dsonar.projectKey=Chinchillord_SQDemo \
       -Dsonar.sources=SQDemo \
