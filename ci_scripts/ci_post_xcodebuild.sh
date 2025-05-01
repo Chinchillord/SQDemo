@@ -5,9 +5,7 @@
 #
 #  Created by Michael Rack on 2/19/25.
 #
-  
-if [ "$CI_XCODEBUILD_ACTION" = "test" ]
-then      
+   
     brew install sonar-scanner
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     cat AAAAA.xml
@@ -25,4 +23,3 @@ then
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=AAAAA.xml \
       -Dsonar.scm.disabled=true
-fi
