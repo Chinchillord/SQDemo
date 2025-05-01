@@ -6,7 +6,8 @@ function convert_xccov_to_xml {
       -e '/:$/s/&/\&amp;/g;s/^\(.*\):$/  <file path="\1">/p'                                   \
       -e 's/^ *\([0-9][0-9]*\): 0.*$/    <lineToCover lineNumber="\1" covered="false"\/>/p'    \
       -e 's/^ *\([0-9][0-9]*\): [1-9].*$/    <lineToCover lineNumber="\1" covered="true"\/>/p' \
-      -e 's/^$/  <\/file>/p'
+      -e 's/^$/  <\/file>/p'                                                                   \
+  | sed 's|/Volumes/workspace/repository/||g' 
 }
 
 function xccov_to_generic {

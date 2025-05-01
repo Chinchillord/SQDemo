@@ -47,7 +47,6 @@
 		2F3320402D52BFDC00A448AA /* OurSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3320502D52BFDE00A448AA /* OurSQDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F33205A2D52BFDE00A448AA /* OurSQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurSQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FDF0E502DC3024600FDF112 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,7 +95,6 @@
 		1CC20DEE2D6656AC00B931DE /* ci_scripts */ = {
 			isa = PBXGroup;
 			children = (
-				2FDF0E502DC3024600FDF112 /* ci_pre_xcodebuild.sh */,
 				1CC20DF42D665A1900B931DE /* xccov-to-sonarqube-generic.sh */,
 				1CC20DEF2D6656EF00B931DE /* ci_post_xcodebuild.sh */,
 			);
