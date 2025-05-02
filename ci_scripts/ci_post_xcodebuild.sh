@@ -4,12 +4,18 @@
 #  SQDemo
 #
 #  Created by Michael Rack on 2/19/25.
-#
-  
+
+# This script runs after Xcode Cloud's build step, and if the action is `build-for-testing`,
+# it re-runs tests with code coverage enabled, converts results to SonarQube format,
+# and uploads them to SonarCloud for analysis.
+
+# Only proceed if the current Xcode build action was "build-for-testing"
 if [ "$CI_XCODEBUILD_ACTION" = "build-for-testing" ]
 then
+    # Remove any previous result bundle if it exists
     rm -rf $CI_RESULT_BUNDLE_PATH
         
+    # Re-run tests using the same build, enabling code coverage and saving results
     xcodebuild \
       -project "/Volumes/workspace/repository/SQDemo.xcodeproj" \
       -scheme "SQDemo" \
@@ -18,21 +24,13 @@ then
       -resultBundlePath $CI_RESULT_BUNDLE_PATH \
       test-without-building
       
+    # Intall SonarScanner for coverage reporting
     brew install sonar-scanner
     
+    # Convert `.xcresult` to SonarQube generic XML format
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
-    cat AAAAA.xml
     
-    echo "==> Full repository dump:"
-    find /Volumes/workspace/repository -print
-    
-    echo "==> Tree dump of repo (all files):"
-    find /Volumes/workspace/repository | sort
-    
-    echo "==> Listing contents under expected test paths:"
-    find /Volumes/workspace/repository/SQDemoTests -type f
-    find /Volumes/workspace/repository/SQDemoUITests -type f
-    
+    # Run sonar-scanner to upload coverage to SonarCloud
     sonar-scanner \
       -Dsonar.projectBaseDir=/Volumes/workspace/repository \
       -Dsonar.organization=benpatterson48 \
@@ -42,5 +40,5 @@ then
       -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
       -Dsonar.scm.disabled=true
 else
-    echo "==> Not running sonar-scanner steps"
+    echo "==> Not running sonar-scanner or PR check process."
 fi
