@@ -31,7 +31,6 @@ then
       -Dsonar.organization=benpatterson48 \
       -Dsonar.projectKey=benpatterson48_SQDemo \
       -Dsonar.sources=. \
-      -Dsonar.tests=/Volumes/workspace/repository/SQDemoTests,/Volumes/workspace/repository/SQDemoUITests \
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
       -Dsonar.scm.provider=git
