@@ -1,9 +1,7 @@
 #!/bin/sh
 
-#  ci_post_xcodebuild.sh
-#  SQDemo
-#
-#  Created by Michael Rack on 2/19/25.
+# Fail early on errors
+set -e
 
 # This script runs after Xcode Cloud's build step, and if the action is `build-for-testing`,
 # it re-runs tests with code coverage enabled, converts results to SonarQube format,
