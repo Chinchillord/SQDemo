@@ -13,7 +13,7 @@ then
     xcodebuild \
       -project "/Volumes/workspace/repository/SQDemo.xcodeproj" \
       -scheme "SQDemo" \
-      -destination 'platform=iOS Simulator,name=iPhone 16' \
+      -destination 'platform=iOS Simulator,name=iPhone 16 Pro' \
       -enableCodeCoverage YES \
       -resultBundlePath $CI_RESULT_BUNDLE_PATH \
       test-without-building
