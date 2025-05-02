@@ -5,9 +5,6 @@
 #
 #  Created by Michael Rack on 2/19/25.
 #
-  
-if [ "$CI_XCODEBUILD_ACTION" = "build-for-testing" ]
-then
     rm -rf $CI_RESULT_BUNDLE_PATH
         
     xcodebuild \
@@ -35,4 +32,3 @@ then
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=AAAAA.xml \
       -Dsonar.scm.disabled=true
-fi
