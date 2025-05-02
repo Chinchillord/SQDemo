@@ -39,7 +39,7 @@ then
       -Dsonar.projectKey=benpatterson48_SQDemo \
       -Dsonar.sources=. \
       -Dsonar.host.url=https://sonarcloud.io \
-      -Dsonar.coverageReportPaths=AAAAA.xml \
+      -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
       -Dsonar.scm.disabled=true
 else
     echo "==> Not running sonar-scanner steps"
