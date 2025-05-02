@@ -11,7 +11,7 @@ then
     rm -rf $CI_RESULT_BUNDLE_PATH
         
     xcodebuild \
-      -project "$CI_XCODE_PROJECT" \
+      -project "/Volumes/workspace/repository/SQDemo.xcodeproj" \
       -scheme "SQDemo" \
       -destination 'platform=iOS Simulator,name=iPhone 16' \
       -enableCodeCoverage YES \
