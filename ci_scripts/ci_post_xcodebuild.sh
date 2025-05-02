@@ -9,8 +9,8 @@
 # it re-runs tests with code coverage enabled, converts results to SonarQube format,
 # and uploads them to SonarCloud for analysis.
 
-# Only proceed if the current Xcode build action was "build-for-testing"
-if [ "$CI_XCODEBUILD_ACTION" = "build-for-testing" ]
+# Only proceed if the workflow is Code Coverage Check
+if [ "$CI_WORKFLOW" = "Code Coverage Check" ]
 then
     # Remove any previous result bundle if it exists
     rm -rf $CI_RESULT_BUNDLE_PATH
