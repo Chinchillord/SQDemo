@@ -34,6 +34,7 @@ then
     find /Volumes/workspace/repository/SQDemoUITests -type f
     
     sonar-scanner \
+      -Dsonar.projectBaseDir=/Volumes/workspace/repository \
       -Dsonar.organization=benpatterson48 \
       -Dsonar.projectKey=benpatterson48_SQDemo \
       -Dsonar.sources=. \
