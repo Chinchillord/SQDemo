@@ -33,7 +33,7 @@ then
       -Dsonar.sources=. \
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
-      -Dsonar.scm.disabled=true
+      -Dsonar.scm.provider=git
 else
     echo "==> Not running sonar-scanner or PR check process."
 fi
