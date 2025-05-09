@@ -38,6 +38,10 @@ private func notInCoverage() {
     print("a")
 }
 
+private func printNoTest() {
+    print("Not a test")
+}
+
 @Observable
 final class CounterViewModel: Countable, ObservableObject {
     var count = 0

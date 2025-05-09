@@ -25,8 +25,7 @@ then
     # Convert `.xcresult` to SonarQube generic XML format
     bash xccov-to-sonarqube-generic.sh /Volumes/workspace/*.xcresult > AAAAA.xml
     
-    # Run sonar-scanner to upload coverage to SonarCloud
-    sonar-scanner \
+    SONAR_ARGS=(
       -Dsonar.projectBaseDir=/Volumes/workspace/repository \
       -Dsonar.organization=benpatterson48 \
       -Dsonar.projectKey=benpatterson48_SQDemo \
@@ -34,6 +33,31 @@ then
       -Dsonar.host.url=https://sonarcloud.io \
       -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
       -Dsonar.scm.provider=git
+    )
+    
+    # Add pull request metadata only if PR environment variables exist
+    if [[ -n "$CI_PULL_REQUEST_NUMBER" && -n "$CI_PULL_REQUEST_SOURCE_BRANCH" && -n "$CI_PULL_REQUEST_TARGET_BRANCH" ]]; then
+      echo "==> Detected PR context, appending PR metadata"
+      SONAR_ARGS+=(
+        -Dsonar.pullrequest.key=$CI_PULL_REQUEST_NUMBER
+        -Dsonar.pullrequest.branch=$CI_PULL_REQUEST_SOURCE_BRANCH
+        -Dsonar.pullrequest.base=$CI_PULL_REQUEST_TARGET_BRANCH
+      )
+    else
+      echo "==> Not a PR-triggered workflow."
+    fi
+
+    sonar-scanner "${SONAR_ARGS[@]}"
+    
+#    # Run sonar-scanner to upload coverage to SonarCloud
+#    sonar-scanner \
+#      -Dsonar.projectBaseDir=/Volumes/workspace/repository \
+#      -Dsonar.organization=benpatterson48 \
+#      -Dsonar.projectKey=benpatterson48_SQDemo \
+#      -Dsonar.sources=. \
+#      -Dsonar.host.url=https://sonarcloud.io \
+#      -Dsonar.coverageReportPaths=ci_scripts/AAAAA.xml \
+#      -Dsonar.scm.provider=git
 else
     echo "==> Not running sonar-scanner or PR check process."
 fi
